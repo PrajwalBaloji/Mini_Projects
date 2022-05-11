@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: aquamarine;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: rgb(7, 49, 49);
+}
+
+.box{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(106, 106, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #fff;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+}
+
+.box.show{
+    transform: translateX(0);
+}
